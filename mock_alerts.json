@@ -1,0 +1,41 @@
+[
+  {
+    "id": "mock-001",
+    "title": "Multiple Failed Logins",
+    "description": "Multiple failed login attempts detected on WIN-01 from IP 192.168.1.45. This could indicate a brute force attack.",
+    "severity": "MEDIUM",
+    "level": 8,
+    "source": "WIN-01",
+    "sourceIp": "192.168.1.45",
+    "timestamp": "2026-02-25T14:12:33Z",
+    "ruleId": "4625",
+    "location": "Windows Security Log",
+    "fullLog": "Event ID 4625: An account failed to log on. Account Name: admin. Failure Reason: Unknown user name or bad password."
+  },
+  {
+    "id": "mock-002",
+    "title": "Suspicious PowerShell Command",
+    "description": "Encoded PowerShell command detected on WIN-02. EncodedCommand execution is often used to obfuscate malicious activity.",
+    "severity": "CRITICAL",
+    "level": 12,
+    "source": "WIN-02",
+    "sourceIp": "192.168.1.78",
+    "timestamp": "2026-02-25T13:58:10Z",
+    "ruleId": "4104",
+    "location": "Microsoft-Windows-PowerShell/Operational",
+    "fullLog": "Event ID 4104: EncodedCommand detected in PowerShell execution. Command: powershell.exe -EncodedCommand JABjAGwAaQBlAG4AdAAgAD0AIABOAGUAdw..."
+  },
+  {
+    "id": "mock-003",
+    "title": "New Admin Account Created",
+    "description": "A new user account was created and immediately added to the Administrators group on WIN-03. This could indicate privilege escalation.",
+    "severity": "CRITICAL",
+    "level": 14,
+    "source": "WIN-03",
+    "sourceIp": "192.168.1.12",
+    "timestamp": "2026-02-25T12:22:44Z",
+    "ruleId": "4720",
+    "location": "Security",
+    "fullLog": "Event ID 4720: A user account 'backup_admin' was created. Subject: SYSTEM. Event ID 4732: User 'backup_admin' was added to Administrators group."
+  }
+]
