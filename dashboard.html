@@ -28,7 +28,7 @@
     }
     html, body { height: 100%; background: var(--bg-deep); color: var(--text-hi); font-family: 'Inter', sans-serif; font-size: 13px; }
     .shell { display: flex; height: 100vh; overflow: hidden; }
-
+ 
     /* SIDEBAR */
     .sidebar { width: 200px; min-width: 200px; background: var(--bg-panel); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; }
     .brand { display: flex; align-items: center; gap: 10px; padding: 18px 16px 16px; border-bottom: 1px solid var(--border); }
@@ -56,7 +56,7 @@
     .dot.offline { background: var(--sev-crit); }
     .view-all-btn { display: flex; align-items: center; gap: 6px; padding: 7px 8px; border-radius: 6px; color: var(--accent-blue); font-size: 11px; font-weight: 500; cursor: pointer; border: none; background: none; width: 100%; text-align: left; margin-top: 4px; transition: background .15s; }
     .view-all-btn:hover { background: var(--bg-hover); }
-
+ 
     /* MAIN */
     .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
     .topnav { display: flex; align-items: center; justify-content: space-between; padding: 0 20px; height: 46px; border-bottom: 1px solid var(--border); background: var(--bg-panel); flex-shrink: 0; }
@@ -68,11 +68,11 @@
     .analyst-badge { display: flex; align-items: center; gap: 8px; background: var(--bg-card2); border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px; font-size: 12px; font-weight: 500; color: var(--text-mid); cursor: pointer; }
     .tri { width:0; height:0; border-left:5px solid transparent; border-right:5px solid transparent; border-top:6px solid var(--accent-blue); }
     .sep-v { width:1px; height:14px; background:var(--border); margin:0 4px; }
-
+ 
     /* PAGES */
     .page { display: none; flex: 1; overflow: hidden; flex-direction: column; }
     .page.active { display: flex; }
-
+ 
     /* DASHBOARD PAGE */
     .content-area { display: flex; flex: 1; overflow: hidden; }
     .alerts-col { width: 300px; min-width: 280px; border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow: hidden; background: var(--bg-panel); }
@@ -109,7 +109,7 @@
     .alert-ts svg { width: 10px; height: 10px; }
     .view-all-row { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 10px; border-top: 1px solid var(--border); color: var(--accent-blue); font-size: 11px; font-weight: 500; cursor: pointer; flex-shrink: 0; transition: background .15s; }
     .view-all-row:hover { background: var(--bg-hover); }
-
+ 
     /* DETAIL COLUMN */
     .detail-col { flex: 1; display: flex; flex-direction: column; overflow: hidden; background: var(--bg-deep); }
     .detail-header { padding: 14px 18px 10px; border-bottom: 1px solid var(--border); flex-shrink: 0; }
@@ -131,14 +131,14 @@
     .detail-meta-item svg { width: 12px; height: 12px; opacity: .6; }
     .log-lbl { font-size: 10px; color: var(--text-lo); letter-spacing: .08em; text-transform: uppercase; margin-bottom: 5px; }
     .log-box { background: var(--bg-deep); border: 1px solid var(--border); border-radius: 5px; padding: 8px 10px; font-family: 'IBM Plex Mono',monospace; font-size: 11px; color: var(--text-mid); line-height: 1.5; word-break: break-all; }
-
+ 
     /* Extra detail fields from mock JSON */
     .detail-field-row { display: flex; flex-direction: column; gap: 6px; margin-bottom: 10px; }
     .detail-field { display: flex; align-items: baseline; gap: 8px; font-size: 12px; }
     .detail-field-label { font-size: 10px; color: var(--text-lo); text-transform: uppercase; letter-spacing: .07em; min-width: 80px; flex-shrink: 0; }
     .detail-field-value { color: var(--text-mid); font-family: 'IBM Plex Mono', monospace; font-size: 11px; }
     .detail-field-value.hi { color: var(--text-hi); font-family: 'Inter', sans-serif; font-size: 12px; }
-
+ 
     .ai-block { background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
     .ai-hdr { display: flex; align-items: center; gap: 8px; padding: 10px 14px; border-bottom: 1px solid var(--border); background: rgba(74,158,255,.04); }
     .ai-eye { width: 28px; height: 28px; background: linear-gradient(135deg,#1a2a4a,#0d1a30); border: 1px solid #2a4070; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
@@ -159,7 +159,7 @@
     .chat-inp::placeholder { color:var(--text-lo); }
     .send-btn { background:none; border:none; color:var(--accent-blue); cursor:pointer; }
     .send-btn svg { width:15px; height:15px; }
-
+ 
     /* FULL PAGES */
     .full-page { flex:1; display:flex; flex-direction:column; overflow:hidden; background:var(--bg-deep); }
     .fp-hdr { padding:20px 24px 16px; border-bottom:1px solid var(--border); background:var(--bg-panel); flex-shrink:0; }
@@ -175,38 +175,38 @@
     tbody tr:hover { background:var(--bg-hover); }
     tbody td { padding:10px 14px; font-size:12px; color:var(--text-mid); border-bottom:1px solid var(--border); }
     tbody tr:last-child td { border-bottom:none; }
-
+ 
     /* STATUS BAR */
     .sbar { display:flex; align-items:center; gap:14px; padding:6px 18px; border-top:1px solid var(--border); background:var(--bg-panel); flex-shrink:0; font-size:11px; color:var(--text-lo); }
     .sbar .pulse { width:6px; height:6px; border-radius:50%; background:var(--online); box-shadow:0 0 5px var(--online); animation:pulse 2s infinite; }
     .sbar .err { background:var(--sev-crit); box-shadow:0 0 5px var(--sev-crit); }
     @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
-
+ 
     /* SPINNER */
     .spin { display:inline-block; width:15px; height:15px; border:2px solid var(--border); border-top-color:var(--accent-blue); border-radius:50%; animation:sp .7s linear infinite; }
     @keyframes sp { to{transform:rotate(360deg)} }
     .ld-row { display:flex; align-items:center; justify-content:center; gap:10px; padding:30px; color:var(--text-lo); font-size:12px; }
-
+ 
     /* EMPTY */
     .empty { text-align:center; padding:50px 20px; color:var(--text-lo); }
     .empty svg { width:36px; height:36px; margin-bottom:12px; opacity:.25; }
     .empty p { font-size:13px; }
-
+ 
     /* NEW FLASH */
     @keyframes nf { 0%{border-color:var(--accent-teal)} 100%{border-color:var(--border)} }
     .new-flash { animation:nf 1.5s ease-out; }
-
+ 
     /* AI CHATBOT FLOATING WIDGET */
     .chat-widget { position: fixed; bottom: 30px; right: 24px; z-index: 9999; }
     .chat-toggle-btn { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(135deg, #1a2a4a, #0d1a30); border: 2px solid var(--accent-blue); display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 20px rgba(74,158,255,0.3); transition: all 0.3s; }
     .chat-toggle-btn:hover { transform: scale(1.05); box-shadow: 0 6px 25px rgba(74,158,255,0.5); }
     .chat-toggle-btn svg { width: 28px; height: 28px; }
     .chat-toggle-btn.open { background: var(--sev-crit); border-color: var(--sev-crit); }
-
+ 
     .chat-window { position: absolute; bottom: 80px; right: 0; width: 380px; height: 550px; background: var(--bg-panel); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 8px 40px rgba(0,0,0,0.6); display: none; flex-direction: column; overflow: hidden; }
     .chat-window.open { display: flex; animation: slideUp 0.3s ease-out; }
     @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-
+ 
     .chat-header { padding: 16px 18px; background: linear-gradient(135deg, #1a2a4a, #0d1a30); border-bottom: 1px solid var(--accent-blue); display: flex; align-items: center; justify-content: space-between; }
     .chat-header-left { display: flex; align-items: center; gap: 10px; }
     .chat-icon { width: 36px; height: 36px; background: linear-gradient(135deg, #1a2a4a, #0d1a30); border: 1px solid #2a4070; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
@@ -215,11 +215,11 @@
     .chat-subtitle { font-size: 10px; color: var(--text-lo); }
     .chat-close { background: none; border: none; color: var(--text-mid); cursor: pointer; font-size: 20px; line-height: 1; padding: 4px; transition: color 0.2s; }
     .chat-close:hover { color: var(--text-hi); }
-
+ 
     .chat-messages { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; }
     .chat-messages::-webkit-scrollbar { width: 4px; }
     .chat-messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
+ 
     .chat-msg { display: flex; gap: 10px; align-items: flex-start; }
     .chat-msg.user { flex-direction: row-reverse; }
     .chat-avatar { width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #1a2a4a, #0d1a30); border: 1px solid #2a4070; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
@@ -229,7 +229,7 @@
     .chat-msg.user .chat-bubble { background: var(--accent-blue); border-color: var(--accent-blue); color: #0a1a16; }
     .chat-bubble p { margin: 0 0 8px 0; }
     .chat-bubble p:last-child { margin-bottom: 0; }
-
+ 
     .chat-input-area { padding: 12px 16px; border-top: 1px solid var(--border); background: var(--bg-deep); display: flex; align-items: center; gap: 10px; }
     .chat-text-input { flex: 1; background: var(--bg-card2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; color: var(--text-hi); font-size: 13px; outline: none; resize: none; font-family: 'Inter', sans-serif; min-height: 40px; max-height: 100px; }
     .chat-text-input::placeholder { color: var(--text-lo); }
@@ -237,13 +237,13 @@
     .chat-send-btn:hover { background: #5aadff; }
     .chat-send-btn:disabled { background: var(--bg-card2); cursor: not-allowed; }
     .chat-send-btn svg { width: 18px; height: 18px; color: #0a1a16; }
-
+ 
     .typing-indicator { display: flex; gap: 4px; padding: 8px 0; }
     .typing-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--text-lo); animation: typing 1.4s infinite; }
     .typing-dot:nth-child(2) { animation-delay: 0.2s; }
     .typing-dot:nth-child(3) { animation-delay: 0.4s; }
     @keyframes typing { 0%, 60%, 100% { opacity: 0.3; } 30% { opacity: 1; } }
-
+ 
     /* AI PANEL */
     .ai-panel {
       position: fixed; top: 0; right: -480px; width: 480px; height: 100%;
@@ -258,7 +258,7 @@
     .ai-content { padding: 18px; overflow-y: auto; font-size: 13px; line-height: 1.6; color: var(--text-hi); flex: 1; }
     .ai-content::-webkit-scrollbar { width: 4px; }
     .ai-content::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
-
+ 
     .ai-section { margin-bottom: 20px; }
     .ai-section-title { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-blue); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
     .ai-section-title svg { width: 12px; height: 12px; }
@@ -277,22 +277,85 @@
     .ai-conf-label { font-size: 11px; color: var(--text-mid); white-space: nowrap; }
     .ai-loading-panel { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 60px 20px; color: var(--text-lo); font-size: 13px; }
     .ai-loading-panel .spin { width: 28px; height: 28px; border-width: 3px; }
-
+ 
     /* Analyze Button */
     .ai-analyze-btn { position: fixed; bottom: 30px; right: 100px; background: linear-gradient(135deg,#4a9eff,#2563eb); border: none; color: white; padding: 12px 18px; font-size: 13px; border-radius: 8px; cursor: pointer; box-shadow: 0 8px 25px rgba(0,0,0,0.4); z-index: 9998; display: flex; align-items: center; gap: 8px; transition: opacity 0.2s, transform 0.2s; }
     .ai-analyze-btn:hover { transform: translateY(-1px); box-shadow: 0 10px 30px rgba(74,158,255,0.3); }
     .ai-analyze-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
     .ai-analyze-btn svg { width: 15px; height: 15px; }
-
+ 
     /* Source badge for mock vs live */
     .source-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 10px; border-radius: 3px; padding: 1px 6px; margin-left: 6px; font-weight: 600; }
     .source-badge.mock { background: rgba(245,166,35,.15); color: var(--accent-gold); border: 1px solid rgba(245,166,35,.3); }
     .source-badge.live { background: rgba(61,214,140,.10); color: var(--online); border: 1px solid rgba(61,214,140,.3); }
   </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    .stats-bar {
+      display: flex;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--bg-panel);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 110px;
+    }
+    .stat-card .stat-num {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--text-hi);
+      line-height: 1;
+    }
+    .stat-card .stat-lbl {
+      font-size: 10px;
+      color: var(--text-lo);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-top: 2px;
+    }
+    .stat-card.crit .stat-num { color: var(--sev-crit); }
+    .stat-card.med  .stat-num { color: var(--sev-med); }
+    .stat-card.low  .stat-num { color: #4caf50; }
+    .charts-row {
+      display: flex;
+      gap: 12px;
+      padding: 12px 16px;
+      background: var(--bg-deep);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .chart-card {
+      background: var(--bg-panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      flex: 1;
+    }
+    .chart-card-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--accent-blue);
+      margin-bottom: 10px;
+    }
+    .chart-card canvas {
+      max-height: 140px;
+    }
+  </style>
 </head>
 <body>
 <div class="shell">
-
+ 
   <!-- SIDEBAR -->
   <aside class="sidebar">
     <div class="brand">
@@ -309,10 +372,10 @@
         <div class="brand-sub">Intelligence Platform</div>
       </div>
     </div>
-
+ 
     <div class="lab-status">
       <div class="section-label"><span>Lab Status</span><button>···</button></div>
-
+ 
       <div class="status-item">
         <div class="status-icon firewall">
           <svg viewBox="0 0 24 24" fill="none" stroke="#4a9eff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
@@ -320,7 +383,7 @@
         <div class="status-info"><div class="status-name">Firewall</div><div class="status-sub">pfSense · Online</div></div>
         <div class="dot online"></div>
       </div>
-
+ 
       <div class="status-item">
         <div class="status-icon endpoints">
           <svg viewBox="0 0 24 24" fill="none" stroke="#3dd68c" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
@@ -328,7 +391,7 @@
         <div class="status-info"><div class="status-name">Endpoints</div><div class="status-sub" id="agent-names">Loading...</div></div>
         <div class="dot online"></div>
       </div>
-
+ 
       <div class="status-item">
         <div class="status-icon siem">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f5a623" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
@@ -336,7 +399,7 @@
         <div class="status-info"><div class="status-name">SIEM</div><div class="status-sub">Wazuh · Collecting Logs</div></div>
         <div class="dot online"></div>
       </div>
-
+ 
       <div class="status-item">
         <div class="status-icon attacker">
           <svg viewBox="0 0 24 24" fill="none" stroke="#e84a4a" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v11m0 0H5m4 0h10m0-11v11m0 0H5"/></svg>
@@ -344,7 +407,7 @@
         <div class="status-info"><div class="status-name">Attacker</div><div class="status-sub">Kali Linux · Ready</div></div>
         <div class="dot online"></div>
       </div>
-
+ 
       <button class="view-all-btn" onclick="switchPage('alerts')">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
         View All Alerts
@@ -352,10 +415,10 @@
       </button>
     </div>
   </aside>
-
+ 
   <!-- MAIN -->
   <div class="main">
-
+ 
     <!-- Top Nav -->
     <nav class="topnav">
       <div class="nav-tabs">
@@ -370,11 +433,56 @@
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
       </div>
     </nav>
-
+ 
     <!-- PAGE: DASHBOARD -->
     <div class="page active" id="page-dashboard">
+ 
+      <!-- Stats Bar -->
+      <div class="stats-bar" id="stats-bar">
+        <div class="stat-card">
+          <div>
+            <div class="stat-num" id="stat-total">—</div>
+            <div class="stat-lbl">Total Alerts</div>
+          </div>
+        </div>
+        <div class="stat-card crit">
+          <div>
+            <div class="stat-num" id="stat-critical">—</div>
+            <div class="stat-lbl">Critical</div>
+          </div>
+        </div>
+        <div class="stat-card med">
+          <div>
+            <div class="stat-num" id="stat-medium">—</div>
+            <div class="stat-lbl">Medium</div>
+          </div>
+        </div>
+        <div class="stat-card low">
+          <div>
+            <div class="stat-num" id="stat-low">—</div>
+            <div class="stat-lbl">Low</div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Charts Row -->
+      <div class="charts-row">
+        <div class="chart-card" style="max-width:180px;">
+          <div class="chart-card-title">Severity Breakdown</div>
+          <canvas id="chart-severity"></canvas>
+        </div>
+        <div class="chart-card">
+          <div class="chart-card-title">Top Source IPs</div>
+          <canvas id="chart-ips"></canvas>
+        </div>
+        <div class="chart-card">
+          <div class="chart-card-title">Alert Types</div>
+          <canvas id="chart-types"></canvas>
+        </div>
+      </div>
+ 
       <div class="content-area">
-
+ 
         <!-- Alerts Feed -->
         <div class="alerts-col">
           <div class="col-header">
@@ -396,7 +504,7 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
           </div>
         </div>
-
+ 
         <!-- Incident Detail -->
         <div class="detail-col">
           <div class="detail-header">
@@ -417,7 +525,7 @@
             </div>
           </div>
         </div>
-
+ 
       </div>
       <!-- Status Bar -->
       <div class="sbar">
@@ -426,7 +534,7 @@
         <span style="margin-left:auto;" id="last-refresh"></span>
       </div>
     </div>
-
+ 
     <!-- PAGE: ALERTS TABLE -->
     <div class="page" id="page-alerts">
       <div class="full-page">
@@ -441,7 +549,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- PAGE: LOGS TABLE -->
     <div class="page" id="page-logs">
       <div class="full-page">
@@ -456,7 +564,7 @@
         </div>
       </div>
     </div>
-
+ 
     <!-- PAGE: EXPLORER -->
     <div class="page" id="page-explorer">
       <div class="full-page">
@@ -471,11 +579,11 @@
         </div>
       </div>
     </div>
-
+ 
   </div><!-- /main -->
 </div><!-- /shell -->
-
-
+ 
+ 
 <!-- AI CHATBOT WIDGET -->
 <div class="chat-widget">
   <div class="chat-toggle-btn" id="chat-toggle" onclick="toggleChat()">
@@ -485,7 +593,7 @@
       <circle cx="12" cy="12" r="1" fill="#0d0f14"/>
     </svg>
   </div>
-
+ 
   <div class="chat-window" id="chat-window">
     <div class="chat-header">
       <div class="chat-header-left">
@@ -502,7 +610,7 @@
       </div>
       <button class="chat-close" onclick="toggleChat()">×</button>
     </div>
-
+ 
     <div class="chat-messages" id="chat-messages">
       <div class="chat-msg">
         <div class="chat-avatar">
@@ -514,7 +622,7 @@
         </div>
       </div>
     </div>
-
+ 
     <div class="chat-input-area">
       <textarea
         class="chat-text-input"
@@ -532,7 +640,7 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- ARGUS AI ANALYSIS PANEL -->
 <div id="ai-panel" class="ai-panel">
   <div class="ai-header">
@@ -543,7 +651,7 @@
     <p style="color:var(--text-lo)">Select an alert and click "Analyze with Argus AI"</p>
   </div>
 </div>
-
+ 
 <button id="ai-analyze-btn" class="ai-analyze-btn" onclick="analyzeSelectedAlert()">
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <circle cx="12" cy="12" r="7"/>
@@ -552,15 +660,15 @@
   </svg>
   Analyze with Argus AI
 </button>
-
+ 
 <script>
-
+ 
 // CONFIG 
 const API = "http://localhost:3000";
-
+ 
 // Embedded mock data for standalone mode
 const MOCK_ALERTS = [];
-
+ 
 // State 
 let allAlerts     = [];
 let selectedAlert = null;
@@ -568,18 +676,18 @@ let selectedId    = null;
 let knownIds      = new Set();
 let newCount      = 0;
 let dataSource    = 'none'; // 'live' | 'mock'
-
+ 
 // Helpers
 const fmtTime = ts => ts ? new Date(ts).toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'}) : '—';
 const fmtFull = ts => ts ? new Date(ts).toLocaleString() : '—';
-
+ 
 function sevPill(s) {
   // Normalize severity casing for consistent pill styling
   const upper = s ? s.toUpperCase() : 'LOW';
   const display = s || 'LOW';
   return `<span class="sev-pill ${upper}"><span class="sev-dot"></span>${display}</span>`;
 }
-
+ 
 // Normalize an alert object from any source into a common shape
 function normalizeAlert(raw, index) {
   // Handles Wazuh API shape, mock_alerts.json v1 (sourceIp/eventId) and v2 (source_ip/type/destination_host/detection_source/log_snippet)
@@ -604,7 +712,7 @@ function normalizeAlert(raw, index) {
     _raw: raw
   };
 }
-
+ 
 // Page Switching
 function switchPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
@@ -615,7 +723,7 @@ function switchPage(name) {
   if (name === 'logs')     renderLogsTable();
   if (name === 'explorer') loadAgents();
 }
-
+ 
 // Primary data loader: try live API first, fall back to mock_alerts.json 
 async function fetchAlerts() {
   try {
@@ -623,13 +731,14 @@ async function fetchAlerts() {
     const res = await fetch(API + '/api/alerts');
     const data = await res.json();
     if (!data.success) throw new Error(data.error);
-
+ 
     const fresh = data.alerts;
     newCount = fresh.filter(a => !knownIds.has(a.id)).length;
     knownIds = new Set(fresh.map(a => a.id));
     allAlerts = fresh;
-
+ 
     renderFeed();
+    renderCharts(allAlerts);
     setStatus(true, data.mode);
   } catch(e) {
     console.log('Backend failed, trying mock_alerts.json...', e.message);
@@ -644,6 +753,7 @@ async function fetchAlerts() {
       knownIds = new Set(mockData.map(a => a.id));
       
       renderFeed();
+      renderCharts(allAlerts);
       setStatus(true, 'mock');
     } catch(mockErr) {
       console.error('Could not load mock data either:', mockErr);
@@ -651,7 +761,7 @@ async function fetchAlerts() {
     }
   }
 }
-
+ 
 // Render alert feed cards
 function renderFeed() {
   const list  = document.getElementById('alerts-list');
@@ -662,15 +772,15 @@ function renderFeed() {
     (a.description || '').toLowerCase().includes(query) ||
     (a.sourceIp    || '').toLowerCase().includes(query)
   );
-
+ 
   document.getElementById('new-badge').textContent =
     newCount > 0 ? newCount + ' New' : items.length + ' Total';
-
+ 
   if (!items.length) {
     list.innerHTML = '<div class="empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg><p>No alerts found</p></div>';
     return;
   }
-
+ 
   list.innerHTML = items.map(a => `
     <div class="alert-card ${a.id===selectedId?'selected':''}" onclick="selectAlert('${a.id}')">
       <div class="alert-card-top">${sevPill(a.severity)}<span class="alert-time">${fmtTime(a.timestamp)}</span></div>
@@ -688,9 +798,9 @@ function renderFeed() {
       </div>
     </div>`).join('');
 }
-
+ 
 function filterAlerts() { renderFeed(); }
-
+ 
 // Select an alert → show detail
 function selectAlert(id) {
   selectedId = id;
@@ -703,18 +813,18 @@ function selectAlert(id) {
   
   console.log('Selected alert:', a);
   renderFeed();
-
+ 
   // Update breadcrumb
   document.getElementById('d-source').textContent = a.source || '—';
   document.getElementById('d-rule').textContent = a.ruleId ? 'Rule ' + a.ruleId : '—';
-
+ 
   // Severity colors
   const sevColors = { 
     CRITICAL: 'var(--sev-crit)', 
     MEDIUM: 'var(--sev-med)', 
     LOW: 'var(--sev-low)' 
   };
-
+ 
   // Recommendations based on severity
   const recs = {
     CRITICAL: [
@@ -733,14 +843,14 @@ function selectAlert(id) {
       'No immediate action required; log for trending analysis.'
     ]
   };
-
+ 
   // Render the detail card
   const detailContent = document.getElementById('detail-content');
   if (!detailContent) {
     console.error('detail-content element not found!');
     return;
   }
-
+ 
   detailContent.innerHTML = `
     <div class="detail-card">
       <div class="detail-card-top">
@@ -789,7 +899,7 @@ function selectAlert(id) {
         <div class="log-box">${escapeHtml(a.fullLog)}</div>
       ` : ''}
     </div>
-
+ 
     <div class="ai-block">
       <div class="ai-hdr">
         <div class="ai-eye">
@@ -829,7 +939,7 @@ function selectAlert(id) {
   
   console.log('Detail rendered successfully');
 }
-
+ 
 // Helper function for escaping HTML
 function escapeHtml(text) {
   if (!text) return '';
@@ -837,17 +947,17 @@ function escapeHtml(text) {
   div.textContent = text;
   return div.innerHTML;
 }
-
+ 
 // Alerts table
 function renderAlertsTable() {
-
+ 
 const fmtTime = ts => ts ? new Date(ts).toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'}) : '—';
 const fmtFull = ts => ts ? new Date(ts).toLocaleString() : '—';
-
+ 
 function sevPill(s) {
   return `<span class="sev-pill ${s}"><span class="sev-dot"></span>${s}</span>`;
 }
-
+ 
   const tb = document.getElementById('tbl-alerts');
   if (!allAlerts.length) { tb.innerHTML='<tr><td colspan="6"><div class="empty"><p>No alerts yet</p></div></td></tr>'; return; }
   tb.innerHTML = allAlerts.map(a=>`
@@ -860,7 +970,7 @@ function sevPill(s) {
       <td>${fmtFull(a.timestamp)}</td>
     </tr>`).join('');
 }
-
+ 
 // Logs table
 function renderLogsTable() {
   const tb = document.getElementById('tbl-logs');
@@ -873,7 +983,7 @@ function renderLogsTable() {
       <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;">${escHtml((a.description||'').slice(0,120))}${(a.description||'').length>120?'…':''}</td>
     </tr>`).join('');
 }
-
+ 
 // Agent explorer
 async function loadAgents() {
   const tb = document.getElementById('tbl-explorer');
@@ -881,10 +991,10 @@ async function loadAgents() {
     const res  = await fetch(API + '/api/agents');
     const data = await res.json();
     if (!data.success) throw new Error(data.error);
-
+ 
     const active = data.agents.filter(a=>a.status==='active');
     document.getElementById('agent-names').textContent = active.map(a=>a.name).join(', ') || 'None active';
-
+ 
     tb.innerHTML = data.agents.map(a=>`
       <tr>
         <td><span class="dot ${a.status==='active'?'online':'offline'}" style="display:inline-block;margin-right:6px;"></span>
@@ -905,7 +1015,7 @@ async function loadAgents() {
     });
     const derived = Object.values(agentMap);
     document.getElementById('agent-names').textContent = derived.map(a=>a.name).join(', ') || 'None';
-
+ 
     if (derived.length) {
       tb.innerHTML = derived.map((a, i)=>`
         <tr>
@@ -921,7 +1031,7 @@ async function loadAgents() {
     }
   }
 }
-
+ 
 // Status bar
 function setStatus(ok, err) {
   const dot = document.getElementById('conn-dot');
@@ -941,7 +1051,7 @@ function setStatus(ok, err) {
     ts.textContent  = '';
   }
 }
-
+ 
 //  Safe HTML escape
 function escHtml(str) {
   if (!str) return '';
@@ -949,14 +1059,14 @@ function escHtml(str) {
   d.textContent = str;
   return d.innerHTML;
 }
-
+ 
 // Init
 fetchAlerts();
 setInterval(fetchAlerts, 10000);
-
-
+ 
+ 
 // Chatbot functions
-
+ 
 function toggleChat() {
   const btn = document.getElementById('chat-toggle');
   const win = document.getElementById('chat-window');
@@ -966,33 +1076,33 @@ function toggleChat() {
     setTimeout(() => document.getElementById('chat-input').focus(), 300);
   }
 }
-
+ 
 function handleChatKeydown(e) {
   if (e.key === 'Enter' && !e.shiftKey) {
     e.preventDefault();
     sendChatMessage();
   }
 }
-
+ 
 async function sendDetailChat(input) {
   const text = input.value.trim();
   if (!text) return;
   input.value = '';
-
+ 
   const aiTxt = document.querySelector('.a-txt');
   if (aiTxt) {
     const userMsg = document.createElement('p');
     userMsg.style.cssText = 'color:var(--accent-blue);margin-top:8px;';
     userMsg.textContent = 'You: ' + text;
     aiTxt.appendChild(userMsg);
-
+ 
     const thinking = document.createElement('p');
     thinking.className = 'argus-thinking';
     thinking.style.cssText = 'color:var(--text-lo);font-style:italic;';
     thinking.textContent = 'Argus is thinking...';
     aiTxt.appendChild(thinking);
   }
-
+ 
   try {
     const res = await fetch('/chat', {
       method: 'POST',
@@ -1000,11 +1110,11 @@ async function sendDetailChat(input) {
       body: JSON.stringify({ message: text })
     });
     const json = await res.json();
-
+ 
     if (aiTxt) {
       const thinking = aiTxt.querySelector('.argus-thinking');
       if (thinking) thinking.remove();
-
+ 
       const reply = document.createElement('p');
       reply.style.cssText = 'color:var(--text-hi);margin-top:8px;';
       reply.textContent = 'Argus: ' + (json.response || 'No response received.');
@@ -1017,23 +1127,158 @@ async function sendDetailChat(input) {
     }
   }
 }
-
+ 
+ 
+// Charts
+let severityChart = null;
+let ipsChart = null;
+let typesChart = null;
+ 
+function renderCharts(alerts) {
+  if (!alerts || alerts.length === 0) return;
+ 
+  // Stats bar
+  const total    = alerts.length;
+  const critical = alerts.filter(a => (a.severity||'').toUpperCase() === 'CRITICAL' || (a.severity||'').toUpperCase() === 'HIGH').length;
+  const medium   = alerts.filter(a => (a.severity||'').toUpperCase() === 'MEDIUM').length;
+  const low      = alerts.filter(a => (a.severity||'').toUpperCase() === 'LOW').length;
+ 
+  document.getElementById('stat-total').textContent    = total;
+  document.getElementById('stat-critical').textContent = critical;
+  document.getElementById('stat-medium').textContent   = medium;
+  document.getElementById('stat-low').textContent      = low;
+ 
+  const chartDefaults = {
+    color: '#8899aa',
+    plugins: { legend: { labels: { color: '#8899aa', font: { size: 11 } } } }
+  };
+ 
+  // Severity donut chart
+  const sevCtx = document.getElementById('chart-severity');
+  if (sevCtx) {
+    if (severityChart) severityChart.destroy();
+    severityChart = new Chart(sevCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Critical/High', 'Medium', 'Low'],
+        datasets: [{
+          data: [critical, medium, low],
+          backgroundColor: ['#e84a4a', '#f5a623', '#4caf50'],
+          borderWidth: 0
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        cutout: '65%',
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#8899aa', font: { size: 10 }, boxWidth: 10 } }
+        }
+      }
+    });
+  }
+ 
+  // Top Source IPs bar chart
+  const ipCounts = {};
+  alerts.forEach(a => {
+    const ip = a.sourceIp || a.source_ip || a.source;
+    if (ip && ip !== '—') ipCounts[ip] = (ipCounts[ip] || 0) + 1;
+  });
+  const topIps = Object.entries(ipCounts).sort((a,b) => b[1]-a[1]).slice(0, 5);
+ 
+  const ipsCtx = document.getElementById('chart-ips');
+  if (ipsCtx && topIps.length > 0) {
+    if (ipsChart) ipsChart.destroy();
+    ipsChart = new Chart(ipsCtx, {
+      type: 'bar',
+      data: {
+        labels: topIps.map(e => e[0]),
+        datasets: [{
+          label: 'Alerts',
+          data: topIps.map(e => e[1]),
+          backgroundColor: '#4a9eff99',
+          borderColor: '#4a9eff',
+          borderWidth: 1,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#8899aa', font: { size: 10 } }, grid: { color: '#1e2d3d' } },
+          y: { ticks: { color: '#8899aa', font: { size: 10 } }, grid: { color: '#1e2d3d' } }
+        }
+      }
+    });
+  }
+ 
+  // Alert types bar chart
+  const typeCounts = {};
+  alerts.forEach(a => {
+    const type = a.title || a.type || 'Unknown';
+    const shortType = type.length > 20 ? type.substring(0, 20) + '...' : type;
+    typeCounts[shortType] = (typeCounts[shortType] || 0) + 1;
+  });
+  const topTypes = Object.entries(typeCounts).sort((a,b) => b[1]-a[1]).slice(0, 5);
+ 
+  const typesCtx = document.getElementById('chart-types');
+  if (typesCtx && topTypes.length > 0) {
+    if (typesChart) typesChart.destroy();
+    typesChart = new Chart(typesCtx, {
+      type: 'bar',
+      data: {
+        labels: topTypes.map(e => e[0]),
+        datasets: [{
+          label: 'Count',
+          data: topTypes.map(e => e[1]),
+          backgroundColor: '#a78bfa99',
+          borderColor: '#a78bfa',
+          borderWidth: 1,
+          borderRadius: 4
+        }]
+      },
+      options: {
+        ...chartDefaults,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#8899aa', font: { size: 10 } }, grid: { color: '#1e2d3d' } },
+          y: { ticks: { color: '#8899aa', font: { size: 10 } }, grid: { color: '#1e2d3d' } }
+        }
+      }
+    });
+  }
+}
+ 
+// Store conversation history for context
+let chatHistory = [];
+ 
 async function sendChatMessage() {
   const input = document.getElementById('chat-input');
   const sendBtn = document.getElementById('chat-send');
   const text = input.value.trim();
   if (!text) return;
-
+ 
   addChatMessage(text, true);
   input.value = '';
   const typingId = 'typing-' + Date.now();
   addTypingIndicator(typingId);
   sendBtn.disabled = true;
-
+ 
   try {
-    const response = await mockChatbotResponse(text);
+    const res = await fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ message: text, history: chatHistory })
+    });
+    const json = await res.json();
+    const reply = json.response || 'No response received.';
+    // Save both sides to history
+    chatHistory.push({ role: 'user', content: text });
+    chatHistory.push({ role: 'assistant', content: reply });
+    // Keep history to last 10 exchanges to save memory
+    if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
     removeTypingIndicator(typingId);
-    addChatMessage(response, false);
+    addChatMessage(reply, false);
   } catch (err) {
     removeTypingIndicator(typingId);
     addChatMessage('Sorry, I encountered an error. Please try again.', false);
@@ -1041,7 +1286,7 @@ async function sendChatMessage() {
     sendBtn.disabled = false;
   }
 }
-
+ 
 function addChatMessage(text, isUser) {
   const messages = document.getElementById('chat-messages');
   const msgDiv = document.createElement('div');
@@ -1059,7 +1304,7 @@ function addChatMessage(text, isUser) {
   messages.appendChild(msgDiv);
   messages.scrollTop = messages.scrollHeight;
 }
-
+ 
 function addTypingIndicator(id) {
   const messages = document.getElementById('chat-messages');
   const msgDiv = document.createElement('div');
@@ -1076,17 +1321,17 @@ function addTypingIndicator(id) {
   messages.appendChild(msgDiv);
   messages.scrollTop = messages.scrollHeight;
 }
-
+ 
 function removeTypingIndicator(id) {
   const el = document.getElementById(id);
   if (el) el.remove();
 }
-
+ 
 async function mockChatbotResponse(userMessage) {
   await new Promise(r => setTimeout(r, 800 + Math.random() * 800));
   const msg = userMessage.toLowerCase();
   const critCount = allAlerts.filter(a => (a.severity||'').toUpperCase() === 'CRITICAL' || (a.severity||'').toUpperCase() === 'HIGH').length;
-
+ 
   if (msg.includes('alert') || msg.includes('threat')) {
     return `I can help you analyze alerts. Currently you have ${allAlerts.length} alerts loaded (${critCount} high/critical). The most recent: "${allAlerts[0]?.title || 'none'}". Would you like me to investigate a specific one?`;
   }
@@ -1104,13 +1349,13 @@ async function mockChatbotResponse(userMessage) {
   }
   return `I understand you're asking about "${userMessage}". I can help analyze the ${allAlerts.length} alerts in your system or answer security-related questions. What would you like to know?`;
 }
-
-
+ 
+ 
 // AI Analysis Panel
-
+ 
 function openAiPanel()  { document.getElementById('ai-panel').classList.add('open'); }
 function closeAiPanel() { document.getElementById('ai-panel').classList.remove('open'); }
-
+ 
 async function analyzeSelectedAlert() {
   if (!selectedAlert) {
     const btn = document.getElementById('ai-analyze-btn');
@@ -1122,20 +1367,20 @@ async function analyzeSelectedAlert() {
     }, 2000);
     return;
   }
-
+ 
   const aiContent = document.getElementById('ai-content');
   openAiPanel();
-
+ 
   aiContent.innerHTML = `
     <div class="ai-loading-panel">
       <div class="spin"></div>
       <span>Argus is analyzing the alert…</span>
       <span style="font-size:11px;color:var(--text-lo);">${escHtml(selectedAlert.title)}</span>
     </div>`;
-
+ 
   const btn = document.getElementById('ai-analyze-btn');
   btn.disabled = true;
-
+ 
   try {
     const res = await fetch('/api/ai/analyze', {
       method: 'POST',
@@ -1143,8 +1388,10 @@ async function analyzeSelectedAlert() {
       body: JSON.stringify({ alert: selectedAlert })
     });
     if (!res.ok) throw new Error('API not available');
-    const data = await res.json();
-    // Handle both flat v3 and rich structured shape
+    const json = await res.json();
+    // server.js wraps the Flask response in { success: true, response: {...} }
+    // so we need to unwrap it before passing to renderAiResponse
+    const data = json.response || json;
     renderAiResponse(data);
   } catch (err) {
     await new Promise(r => setTimeout(r, 600 + Math.random() * 600));
@@ -1157,11 +1404,11 @@ async function analyzeSelectedAlert() {
     btn.disabled = false;
   }
 }
-
+ 
 function generateMockAiResponse(alert) {
   const sevUpper = (alert.severity || 'LOW').toUpperCase();
   const isHighPriority = sevUpper === 'CRITICAL' || sevUpper === 'HIGH';
-
+ 
   // Flat summary fields
   const threat_level = isHighPriority ? 'High' : sevUpper === 'MEDIUM' ? 'Medium' : 'Low';
   const summary = isHighPriority
@@ -1170,7 +1417,7 @@ function generateMockAiResponse(alert) {
   const recommendation = isHighPriority
     ? `Investigate source IP ${alert.sourceIp || alert.source}, check account lockout policies, and isolate the affected host if compromise is confirmed.`
     : `Monitor ${alert.sourceIp || alert.source} for repeated occurrences. Review firewall and SIEM rules before taking action.`;
-
+ 
   return {
     // Flat v3 fields (from analyzeWithArgus dummy / real API)
     threat_level,
@@ -1206,13 +1453,13 @@ function generateMockAiResponse(alert) {
     ]
   };
 }
-
+ 
 function renderAiResponse(data) {
   const aiContent = document.getElementById("ai-content");
-
+ 
   // Detect response shape: flat v3 vs rich structured
   const isFlat = data.threat_level && !data.what_happened;
-
+ 
   if (isFlat) {
     // Flat v3 response from analyzeWithArgus / real API
     const tlColor = data.threat_level === 'High' || data.threat_level === 'Critical'
@@ -1220,7 +1467,7 @@ function renderAiResponse(data) {
       : data.threat_level === 'Medium'
         ? 'var(--sev-med)'
         : 'var(--sev-low)';
-
+ 
     aiContent.innerHTML = `
       <div class="ai-section">
         <div class="ai-section-title">
@@ -1232,7 +1479,7 @@ function renderAiResponse(data) {
           <span style="font-size:12px;color:${tlColor};font-weight:600;">${data.threat_level || ''}</span>
         </div>
       </div>
-
+ 
       <div class="ai-section">
         <div class="ai-section-title">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
@@ -1240,7 +1487,7 @@ function renderAiResponse(data) {
         </div>
         <div class="ai-summary-text">${data.summary || '—'}</div>
       </div>
-
+ 
       <div class="ai-section">
         <div class="ai-section-title">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
@@ -1252,24 +1499,24 @@ function renderAiResponse(data) {
         </div>
         ${data._simulated ? '<div style="margin-top:8px;font-size:10px;color:var(--text-lo);font-style:italic;">Simulated AI Response</div>' : ''}
       </div>
-
+ 
       <div style="font-size:10px;color:var(--text-lo);text-align:center;padding-top:8px;border-top:1px solid var(--border);">
         Analysis generated by Argus AI · ${new Date().toLocaleTimeString()}
       </div>
     `;
     return;
   }
-
+ 
   // Rich structured response (what_happened / why_it_matters / etc.)
   const sevColor = { CRITICAL: 'var(--sev-crit)', HIGH: 'var(--sev-crit)', MEDIUM: 'var(--sev-med)' }[(data.severity||'').toUpperCase()] || 'var(--sev-low)';
-
+ 
   const listItems = arr =>
     (arr || []).map(s => `
       <div class="ai-rec-item">
         <div class="r-dot" style="margin-top:6px;flex-shrink:0;"></div>
         <span>${s}</span>
       </div>`).join('');
-
+ 
   aiContent.innerHTML = `
     <div class="ai-section">
       <div class="ai-section-title">
@@ -1279,7 +1526,7 @@ function renderAiResponse(data) {
       <div class="ai-summary-text">${data.what_happened || '—'}</div>
       ${data.playbook_id ? `<div style="margin-top:8px;"><span class="ai-tag blue">Playbook: ${data.playbook_id}</span></div>` : ''}
     </div>
-
+ 
     <div class="ai-section">
       <div class="ai-section-title">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
@@ -1290,7 +1537,7 @@ function renderAiResponse(data) {
         <span style="font-size:12px;color:${sevColor};font-weight:600;">${data.severity || ''}</span>
       </div>
     </div>
-
+ 
     <div class="ai-section">
       <div class="ai-section-title">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
@@ -1298,7 +1545,7 @@ function renderAiResponse(data) {
       </div>
       <div class="ai-summary-text">${data.why_it_matters || '—'}</div>
     </div>
-
+ 
     ${data.investigation_steps?.length ? `
     <div class="ai-section">
       <div class="ai-section-title">
@@ -1307,7 +1554,7 @@ function renderAiResponse(data) {
       </div>
       ${listItems(data.investigation_steps)}
     </div>` : ''}
-
+ 
     ${data.recommended_actions?.length ? `
     <div class="ai-section">
       <div class="ai-section-title">
@@ -1316,7 +1563,7 @@ function renderAiResponse(data) {
       </div>
       ${listItems(data.recommended_actions)}
     </div>` : ''}
-
+ 
     ${data.where_to_look?.length ? `
     <div class="ai-section">
       <div class="ai-section-title">
@@ -1325,13 +1572,13 @@ function renderAiResponse(data) {
       </div>
       ${listItems(data.where_to_look)}
     </div>` : ''}
-
+ 
     <div style="font-size:10px;color:var(--text-lo);text-align:center;padding-top:8px;border-top:1px solid var(--border);">
       Analysis generated by Argus AI · ${new Date().toLocaleTimeString()}
     </div>
   `;
 }
-
+ 
 </script>
 </body>
 </html>

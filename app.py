@@ -30,6 +30,7 @@ def chat():
     try:
         data = request.get_json()
         user_message = data.get("message", "")
+        history = data.get("history", [])
 
         try:
             alerts = DataConnector().get_alerts()[:5]
@@ -44,7 +45,6 @@ def chat():
         else:
             alert_text = "No alerts available."
 
-        # Check if this is an analyze request by looking for the keyword
         is_analyze = "analyze this security alert" in user_message.lower()
 
         if is_analyze:
@@ -58,21 +58,33 @@ def chat():
 }}
 
 {user_message}"""
-        else:
-            prompt = f"You are Argus, a SOC analyst assistant. Help the analyst with their question.\n\nCurrent alerts:\n{alert_text}\n\nUser question: {user_message}\n\nRespond clearly and concisely."
-
-        completion = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
+            messages = [
                 {
                     "role": "system",
                     "content": "You are Argus, a SOC analyst assistant. Help beginner analysts understand security alerts and threats."
                 },
+                {"role": "user", "content": prompt}
+            ]
+        else:
+            # Build messages with history
+            messages = [
                 {
-                    "role": "user",
-                    "content": prompt
+                    "role": "system",
+                    "content": f"You are Argus, a SOC analyst assistant. Help beginner analysts understand security alerts and threats.\n\nCurrent alerts in the system:\n{alert_text}"
                 }
-            ],
+            ]
+            # Add conversation history (last 10 messages to keep costs low)
+            for msg in history[-10:]:
+                messages.append({
+                    "role": msg["role"],
+                    "content": msg["content"]
+                })
+            # Add the new user message
+            messages.append({"role": "user", "content": user_message})
+
+        completion = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages,
             temperature=0.3
         )
 
@@ -80,7 +92,6 @@ def chat():
 
         if is_analyze:
             try:
-                # Strip markdown code blocks if OpenAI wraps the JSON
                 cleaned = response_text.strip()
                 if cleaned.startswith("```"):
                     cleaned = cleaned.split("```")[1]
